@@ -1,0 +1,38 @@
+PATH
+  remote: .
+  specs:
+    adapter-memcached (1.0)
+      adapter (~> 0.5)
+      memcached (~> 1.0.2)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.3)
+    adapter (0.5.1)
+    diff-lcs (1.1.2)
+    i18n (0.5.0)
+    log_buddy (0.5.0)
+    memcached (1.0.2)
+    rspec (2.4.0)
+      rspec-core (~> 2.4.0)
+      rspec-expectations (~> 2.4.0)
+      rspec-mocks (~> 2.4.0)
+    rspec-core (2.4.0)
+    rspec-expectations (2.4.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.4.0)
+    timecop (0.3.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport (~> 3)
+  adapter (~> 0.5)
+  adapter-memcached!
+  i18n (= 0.5.0)
+  log_buddy (~> 0.5.0)
+  memcached (~> 1.0.2)
+  rspec (~> 2.3)
+  timecop (~> 0.3.5)
