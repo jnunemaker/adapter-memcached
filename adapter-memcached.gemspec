@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "adapter-memcached"
   s.version     = Adapter::Memcached::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["John Nunemaker"]
+  s.email       = ["nunemaker@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Adapter for memcached}
+  s.description = %q{Adapter for memcached}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
