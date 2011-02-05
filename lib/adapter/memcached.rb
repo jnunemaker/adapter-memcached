@@ -22,7 +22,7 @@ module Adapter
     end
 
     def lock(name, options={}, &block)
-      key           = name.to_s
+      key           = key_for(name)
       start         = Time.now
       lock_acquired = false
       expiration    = options.fetch(:expiration, 1)
@@ -43,12 +43,11 @@ module Adapter
       begin
         yield
       ensure
-        delete(key)
+        begin
+          client.delete(key)
+        rescue ::Memcached::NotFound
+        end
       end
-    end
-
-    def key_for(key)
-      [super].pack("m").strip
     end
   end
 end
